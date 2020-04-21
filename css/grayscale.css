@@ -7,7 +7,11 @@
 .jumbotron {
 background-image: url(/img/tarrin.JPG);
 background-size: cover;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
 height: 100%;}
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;

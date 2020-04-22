@@ -1,16 +1,17 @@
-<?php 
-if(isset($_POST['submit'])){
-    $to = "questgamesgalway@gmail.com"; 
-    $from = $_POST['email']; 
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message =  $_POST['email'];
- 
+<?php
+if(isset($_POST["submit"])) {
+$recipient = "questgamesgalway@gmail.com"; //my email
+echo $subject = 'Email message from QuestGames';
+echo $email = $_POST["email"];
+echo  $message = $_POST["email"];
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);  
-    }
+ $mailBody="Name: QuestGames\nEmail: $email\n\n$message"; 
+
+ mail($recipient, $subject, $mailBody, "From: Questgames <$email>");
+
+echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
+
+}
 ?>
 
 

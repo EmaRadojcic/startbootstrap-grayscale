@@ -4,16 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
-.jumbotron {
-background-image: url(/img/tarrin.JPG);
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-height: 100%;
-padding: 500px;
 
-}
 
 #mainNav {
   min-height: 56px;
@@ -101,8 +92,7 @@ padding: 500px;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background-image: url("../img/village.png");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/village.png");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

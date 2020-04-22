@@ -3,6 +3,14 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+
+
+.mybg{
+  background-image: url("../img/village.png")
+
+
+}
+
 .bg-image {
  
   background-image: url("../img/bg-masthead.jpg");

@@ -1,3 +1,27 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "questgamesgalway@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message =  $_POST['message'];
+    $message2 = "Here is a copy of your message " . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+  
+    }
+?>
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -135,9 +159,9 @@ Enable Bluetooth pairing for the controller and tap @+C to go into VR mode on th
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
           <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
 
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          <form class="form-inline d-flex"  action="" method="post">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..."  name="email>
+            <button type="submit" name="submit" value="Submit" class="btn btn-primary mx-auto">Subscribe</button>
           </form>
 
         </div>
@@ -157,7 +181,7 @@ Enable Bluetooth pairing for the controller and tap @+C to go into VR mode on th
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Address</h4>
               <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+              <div class="small text-black-50">GMIT, Dublin Road Galway</div>
             </div>
           </div>
         </div>
@@ -169,7 +193,7 @@ Enable Bluetooth pairing for the controller and tap @+C to go into VR mode on th
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
+                <a href="#">questgamesgalway@gmail.com</a>
               </div>
             </div>
           </div>
@@ -189,14 +213,12 @@ Enable Bluetooth pairing for the controller and tap @+C to go into VR mode on th
 
       <div class="social d-flex justify-content-center">
         <a href="#" class="mx-2">
-          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
         </a>
         <a href="#" class="mx-2">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-github"></i>
-        </a>
+
       </div>
 
     </div>
@@ -205,7 +227,7 @@ Enable Bluetooth pairing for the controller and tap @+C to go into VR mode on th
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2019
+      Copyright &copy; QuestGames 2019
     </div>
   </footer>
 

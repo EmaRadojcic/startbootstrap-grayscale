@@ -7,7 +7,7 @@
 
 .mybg{
   background-image: url("../img/village.png")
-
+   background-size: cover;
 
 }
 
